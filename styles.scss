@@ -1,0 +1,77 @@
+// Variables
+$primary-color: #100027;
+$game-title-color: #00c0d8;
+$shadow-color: #116591;
+$text-color-light: white;
+
+// Body Background
+body {
+  --s: 177px;
+  --c1: #1d1d1d;
+  --c2: #4e4f51;
+  --c3: #3c3c3c;
+
+  background: repeating-conic-gradient(from 30deg, #0000 0 120deg, var(--c3) 0 50%)
+      calc(var(--s) / 2) calc(var(--s) * tan(30deg) / 2),
+    repeating-conic-gradient(from 30deg, var(--c1) 0 60deg, var(--c2) 0 120deg, var(--c3) 0 50%);
+  background-size: var(--s) calc(var(--s) * tan(30deg));
+}
+
+// Content Zone
+.content-zone {
+  background-color: $primary-color;
+
+  .game-title {
+    font-family: Bombardier;
+    font-size: 70px;
+    color: $game-title-color;
+    text-shadow: -2px 0 $shadow-color, 0 2px $shadow-color, 2px 0 $shadow-color, 0 -2px $shadow-color;
+  }
+
+  .text-light {
+    color: $text-color-light;
+  }
+
+  .text-info {
+    color: #00c0d8;
+  }
+
+  .text-warning {
+    color: #ffc107;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+// Navbar
+.navbar {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .nav-link {
+    &:hover {
+      color: lighten($text-color-light, 10%);
+    }
+  }
+}
+
+// Custom Toggler Icon
+.toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+
+  &.middle-bar {
+    margin: 5px auto;
+  }
+}
+
+// Font Face
+@font-face {
+  font-family: "Bombardier";
+  src: url("ROR2-Font/Bombardier-Regular.ttf");
+}

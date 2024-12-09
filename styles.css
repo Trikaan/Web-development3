@@ -1,0 +1,52 @@
+body {
+  --s: 177px;
+  --c1: #1d1d1d;
+  --c2: #4e4f51;
+  --c3: #3c3c3c;
+  background: repeating-conic-gradient(from 30deg, rgba(0, 0, 0, 0) 0 120deg, var(--c3) 0 50%) calc(var(--s) / 2) calc(var(--s) * 0.5773502692 / 2), repeating-conic-gradient(from 30deg, var(--c1) 0 60deg, var(--c2) 0 120deg, var(--c3) 0 50%);
+  background-size: var(--s) calc(var(--s) * 0.5773502692);
+}
+
+.content-zone {
+  background-color: #100027;
+}
+.content-zone .game-title {
+  font-family: Bombardier;
+  font-size: 70px;
+  color: #00c0d8;
+  text-shadow: -2px 0 #116591, 0 2px #116591, 2px 0 #116591, 0 -2px #116591;
+}
+.content-zone .text-light {
+  color: white;
+}
+.content-zone .text-info {
+  color: #00c0d8;
+}
+.content-zone .text-warning {
+  color: #ffc107;
+}
+.content-zone img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.5rem;
+}
+.navbar .nav-link:hover {
+  color: white;
+}
+
+.toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+}
+.toggler-icon.middle-bar {
+  margin: 5px auto;
+}
+
+@font-face {
+  font-family: "Bombardier";
+  src: url("ROR2-Font/Bombardier-Regular.ttf");
+}/*# sourceMappingURL=styles.css.map */
